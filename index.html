@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MusicTagManage</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --bg: #ffffff; --muted: #5f6368; --line: #dadce0; --link: #1a5fb4; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e8eaed; --bg: #1f1f1f; --muted: #9aa0a6; --line: #3c4043; --link: #8ab4f8; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.75 system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+  p, li { margin: 6px 0; }
+  .lead { color: var(--muted); margin-bottom: 24px; }
+  a { color: var(--link); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>MusicTagManage</h1>
+  <p class="lead">YouTube Music の曲に自由なタグと値を付けて管理する、個人用のアプリです。</p>
+
+  <h2>できること</h2>
+  <ul>
+    <li>YouTube Music のプレイリストから曲を取り込み、タグ（例: 作業用）や整数の値（例: bpm=128、好み度=4）を付けます</li>
+    <li>「作業用 好み度&gt;=4 time&lt;5:00」のような式で曲を絞り込み、プレイリストとして書き出します</li>
+    <li>Windows と Android の間で、タグと値を同期します</li>
+  </ul>
+
+  <h2>Google アカウントの使い方</h2>
+  <p>同期のために、Google ドライブの<strong>アプリ専用フォルダー</strong>だけを読み書きします（権限 <code>drive.appdata</code>）。
+     ドライブのほかのファイル、メール、連絡先などには一切アクセスしません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+
+  <h2>English</h2>
+  <p>MusicTagManage is a personal app for tagging YouTube Music tracks with free-form tags and integer values,
+     filtering them with a query, and exporting the result as a playlist. It syncs tags and values between Windows and Android
+     through the app's own hidden folder in Google Drive (<code>drive.appdata</code> scope only).
+     See the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <footer><a href="privacy.html">プライバシーポリシー / Privacy Policy</a></footer>
+</main>
+</body>
+</html>
